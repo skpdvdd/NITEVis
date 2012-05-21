@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="NITEVis.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ONIConfig" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ONIConfig.xml</Value>
+    </Setting>
+    <Setting Name="DisplaySkeleton" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SkeletonColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="SkeletonLowConfidenceColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">255, 128, 128</Value>
+    </Setting>
+    <Setting Name="SkeletonLowConfidenceThreshold" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.25</Value>
+    </Setting>
+    <Setting Name="SkeletonSmoothing" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.4</Value>
+    </Setting>
+    <Setting Name="SkeletonThickness" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="PauseInitially" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

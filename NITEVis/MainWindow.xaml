@@ -1,0 +1,18 @@
+﻿<Window x:Class="NITEVis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:NITEVis"
+        Title="NITEVis" Height="508" KeyDown="Window_KeyDown" Width="1286" ResizeMode="NoResize" Loaded="Window_Loaded" Closing="Window_Closing" Initialized="Window_Initialized">
+    <Window.Resources>
+        <ImageBrush x:Key="labelData" />
+        <ImageBrush x:Key="depthColors" ImageSource="DepthColors.png" />
+        <ImageBrush x:Key="labelColors" ImageSource="LabelColors.png" />
+        <local:DepthEffect x:Key="depthEffect" TexLabel="{StaticResource labelData}" TexDepthColor="{StaticResource depthColors}" TexLabelColor="{StaticResource labelColors}" />
+    </Window.Resources>
+    <StackPanel Name="stackPanel" Orientation="Horizontal">
+        <Grid Name="depthGrid">
+            <Image Name="depthImage" Stretch="None" Effect="{StaticResource depthEffect}" />
+        </Grid>
+        <Image Name="rgbImage" Stretch="None" />
+    </StackPanel>
+</Window>
